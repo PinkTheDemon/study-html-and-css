@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 标签选择器对该标签所有内容都生效 */
+        p {
+            color: aquamarine;
+        }
+        /* 前面加点表示定义，使用时不需要加. */
+        /* 类名只能数字字母下划线中划线，不能数字中划线开头 */
+        /* 一个标签可以同时有多个类名，类名之间以空格隔开 */
+        .red {
+            color: blue;
+        }
+        .size {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p>第一行p</p>
+    <p>第二行p</p>
+    <p>第三行p</p>
+    <p class="red size">2类选择器，标签p</p>
+    <div class="red">类选择器，标签div</div>
+</body>
+</html>

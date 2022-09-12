@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- rowspan纵向合并，只保留最上面的内容 -->
+    <!-- colspan横向合并，只保留最左边的内容 -->
+    <!-- 只有同一结构的标签（tbody）能够合并 -->
+    <table border="1" width="300" height="100">
+        <thead>
+            <tr>
+                <caption><b>统计表</b></caption>
+                <th>姓名</th>
+                <th colspan="2">年龄</th>
+                <!-- <th>性别</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">张三</td>
+                <td>12</td>
+                <td>男</td>
+            </tr>
+            <tr>
+                <!-- <td>李四</td> -->
+                <td>114514</td>
+                <td>男</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

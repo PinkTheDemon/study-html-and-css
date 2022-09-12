@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 后代选择器，后多少代都可以选 */
+        /* div p {
+            color: red;
+        } */
+        .parent .child {
+            color: aquamarine;
+        }
+        /* 子代选择器，只选中子代 */
+        /* div > p {
+            color: blue;
+        } */
+        .fa > .son {
+            color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <p>这是p标签</p>
+    <div class="parent">
+        <p class="child">这是div标签的儿子p标签</p>
+        <span>
+            <p class="child">这是div标签的孙子p标签</p>
+        </span>
+    </div>
+    <div class="fa">
+        <p class="son">这是div标签的儿子p标签</p>
+        <span>
+            <p class="son">这是div标签的孙子p标签</p>
+        </span>
+    </div>
+</body>
+</html>

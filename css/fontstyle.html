@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 谷歌浏览器默认字号16px */
+        .size {
+            font-size: 30px;
+        }
+        /* 100到900的整百数，400正常，700加粗 */
+        .weight {
+            font-weight: 700;
+        }
+        .style {
+            font-style: italic;
+        }
+        em {
+            font-style: normal;
+        }
+        /* Windows默认字体微软雅黑 */
+        .family {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .无衬线字体 {
+            /* font-family: 宋体; */
+            /* 按优先级显示你电脑上有的字体 */
+            font-family: 黑体, 微软雅黑, Arial, sans-serif;
+        }
+        /* 样式层叠的问题，同一标签设置相同属性，以最后设置的为准 */
+        .复合属性 {
+            /* font: style weight size/line-height family */
+            /* 顺序固定，空格隔开，数量也限定，只能省略前两个，省略表示默认值 */
+            font: italic bold 35px 'Times New Roman';
+        }
+    </style>
+</head>
+<body>
+    <p class="size weight">30号字，700加粗</p>
+    <p class="style">默认不倾斜倾斜字体</p>
+    <em>默认倾斜</em>
+    <div class="family">Times New Roman 字体</div>
+    <div class="无衬线字体">黑体字体</div>
+    <div class="复合属性">倾斜加粗35px新罗马字体</div>
+    <h2>常见字体系列</h2>
+    <img src="./常见字体系列.png" alt="">
+</body>
+</html>

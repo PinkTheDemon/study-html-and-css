@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+</head>
+<body>
+    <!-- action是提交地址 -->
+    <form action="#">
+    <!-- input输入，用于登陆、搜索等 -->
+    <!-- placeholder提示字属性 -->
+    <h2>input</h2>
+    文本框：<input type="text" placeholder="想输啥输啥">
+    <br><br>
+    密码框：<input type="password" placeholder="密码">
+    <br><br>
+    <!-- name分组，拥有相同属性的单选框为一组 -->
+    <!-- checked默认选中 -->
+    单选框：<input type="radio" name="性别" id="">男 
+            <input type="radio" name="性别" id="">女 
+            <input type="radio" name="性别" id="" checked>保密
+    <br><br>
+    多选框：<input type="checkbox">
+    <br><br>
+    <!-- multiple上传多个文件 -->
+    上传文件：<input type="file" name="" id="" multiple>
+    <br><br>
+    <!-- submit提交，reset重置，button配合js添加功能 -->
+    <input type="submit" value="注册"> <input type="reset" value="重置"> <input type="button" value="普通按钮">
+    <br><br>
+    <h2>select</h2>
+    学历：<select>
+        <option value="???">小学</option>
+        <option value="???">初中</option>
+        <option value="???">高中</option>
+        <option value="不知道value啥用" selected>带专！</option>
+    </select>
+    <br><br>
+    <h2>textarea</h2>
+    <!-- cols：可见宽度；rows：可见行数 -->
+    <!-- 会自动换行，可以在网页中拉右下角改变大小，通过css禁用，实际中宽高建议css设置 -->
+    文本域：<textarea name="" id="" cols="30" rows="10" placeholder="留下你的评论吧"></textarea>
+    <br><br>
+    <!-- label：点击label内容也可以选中选项 -->
+    性别：<input type="radio" name="gender" id="man"> <label for="man">男</label>
+          <input type="radio" name="gender" id="woman"> <label for="woman">女</label>
+          <label><input type="radio" name="gender" id="" checked>保密</label>
+    <h2>button</h2>
+    <!-- button也可以作为按钮标签 -->
+    <button type="submit">注册</button> <button type="reset">重置</button> <button type="button">普通按钮</button>
+    </form>
+</body>
+</html>
