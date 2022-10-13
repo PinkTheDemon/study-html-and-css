@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            height: 300px;
+            width: 300px;
+            background-color: pink;
+            margin: 20px;
+            /* 这俩不太好 */
+            /* border: 1px solid black; */
+            /* padding-top: 1px; */
+
+            /* overflow: hidden; */
+        }
+
+        .son {
+            height: 200px;
+            width: 200px;
+            background-color: skyblue;
+            margin-top: 50px;
+
+            /* display: inline-block; */
+        }
+
+        p {
+            height: 300px;
+            width: 300px;
+            background-color: pink;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="son">互相嵌套的块级标签，子元素margin-top会作用到父元素上</div>
+    </div>
+    <p>垂直方向两个margin会叠加为二者的大值</p>
+</body>
+</html>
